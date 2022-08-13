@@ -1,0 +1,18 @@
+[package]
+name = "rustcii"
+version = "1.0.0"
+edition = "2021"
+authors = ["Giftzwerg02"]
+license = "MIT"
+description = "A tool to convert old and outdated \"characters\" into the superior Rustcii-Encoding."
+homepage = "https://github.com/Giftzwerg02/rustcii"
+readme = "README.md"
+keywords = ["cli", "encoding"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.61"
+bit-vec = "0.6.3"
+clap = { version = "3.2.17", features = ["cargo"] }
