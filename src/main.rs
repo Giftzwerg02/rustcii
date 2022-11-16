@@ -60,7 +60,7 @@ fn decode(input: &str) -> Result<String> {
         let bit = match c {
             ROCKET => Ok(false),
             CRAB => Ok(true),
-            _ => Err(anyhow::Error::msg(format!("Char was neither '{}' nor {}. I guess the input was created by some GO-Programmer...", ROCKET, CRAB)))
+            _ => Err(anyhow::Error::msg(format!("Char was neither '{}' nor '{}'. I guess the input was created by some Go-Programmer...", ROCKET, CRAB)))
         }?;
         bits.push(bit);
     }
